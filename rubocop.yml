@@ -13,6 +13,33 @@ AllCops:
 #   Overrides   #
 #################
 
+# Enforce LF line endings
+# https://github.com/rubocop-hq/rubocop/blob/master/manual/cops_layout.md#layoutendofline
+Layout/EndOfLine:
+  EnforcedStyle: lf
+
+# Allows lengthy describes in specs
+# https://github.com/rubocop-hq/rubocop/blob/master/manual/cops_metrics.md#metricsblocklength
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+# Noise from longer lines
+# https://github.com/rubocop-hq/rubocop/blob/master/manual/cops_metrics.md#metricslinelength
+Metrics/LineLength:
+  Max: 120
+
+# Allows { { } } in specs
+# https://github.com/rubocop-hq/rubocop/blob/master/manual/cops_style.md#styleblockdelimiters
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/**/*'
+
+# Prevents noise from Abilities::SomeClass complaints
+# https://github.com/rubocop-hq/rubocop/blob/master/manual/cops_style.md#styleclassandmodulechildren
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
 # Prefer compact style over exploded.
 # https://github.com/rubocop-hq/rubocop/blob/master/manual/cops_style.md#styleraiseargs
 Style/RaiseArgs:
