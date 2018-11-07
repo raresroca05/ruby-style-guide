@@ -18,6 +18,11 @@ AllCops:
 Layout/EndOfLine:
   EnforcedStyle: lf
 
+# Allow multi-line methods to be indented instead of aligned
+# https://github.com/rubocop-hq/rubocop/blob/master/manual/cops_layout.md#layoutmultilinemethodcallindentation
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
 # Allows lengthy describes in specs
 # https://github.com/rubocop-hq/rubocop/blob/master/manual/cops_metrics.md#metricsblocklength
 Metrics/BlockLength:

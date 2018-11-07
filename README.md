@@ -598,6 +598,17 @@ Translations of the guide are available in the following languages:
     A discussion on the merits of both alternative styles can be found
     [here](https://github.com/rubocop-hq/ruby-style-guide/pull/176).
 
+  * <a name="multiline-method-call-indentation"></a>
+    Indent and align multi-line method calls.
+    ```ruby
+    # good
+    out = SomeClass
+      .method_one(params)
+      .method_two
+      .pluck(:some_column)
+      .to_a
+    ```
+
   * <a name="no-double-indent"></a>
     Align the parameters of a method call if they span more than one
     line. When aligning parameters is not appropriate due to line-length
