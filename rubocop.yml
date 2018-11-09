@@ -69,11 +69,6 @@ Style/WordArray:
 # Disabled cops #
 #################
 
-# Auxiliary verbs can be useful
-# https://github.com/rubocop-hq/rubocop/blob/master/manual/cops_naming.md#namingpredicatename
-Naming/PredicateName:
-  Enabled: false
-
 # Lean towards readable code over meaningless required code comments
 # https://github.com/rubocop-hq/rubocop/blob/master/manual/cops_style.md#styledocumentation
 Style/Documentation:
